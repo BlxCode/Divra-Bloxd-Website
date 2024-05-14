@@ -25,6 +25,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="Images/hello_extensions.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./AllStyles.css">
   <style>
     .varela-round-regular {
       font-family: "Varela Round", sans-serif;
@@ -81,8 +82,9 @@
     p {
       font-size: 18px;
     }
-    footer{
-      color:white;
+
+    footer {
+      color: white;
     }
 
     h2 {
@@ -113,12 +115,24 @@
 </head>
 
 <body>
-  <div>
+  <div id="TOP" class="w3-bar w3-green" style="user-select:none;-webkit-user-drag:none;-webkit-user-select:none;">
+    <div style="user-select:none;-webkit-user-drag:none;cursor:pointer;-webkit-user-select:none;"
+      class="w3-bar-item bar-selected">Home</div>
+    <div style="user-select:none;-webkit-user-drag:none;cursor:pointer;-webkit-user-select:none;" class="w3-bar-item">
+      About Us</div>
+    <div style="user-select:none;-webkit-user-drag:none;cursor:pointer;-webkit-user-select:none;" class="w3-bar-item">
+      Fetures</div>
+    <div style="user-select:none;-webkit-user-drag:none;cursor:pointer;-webkit-user-select:none;" class="w3-bar-item">
+      Downloads</div>
+    <div style="user-select:none;-webkit-user-drag:none;cursor:pointer;-webkit-user-select:none;" class="w3-bar-item">
+      Help</div>
+  </div>
+  <div class="w3-row" style="text-align:left;">
     <h1 id="Title" class=".varela-round-regular"
-      style=" color:white; font-size:6em; text-align:center;margin-bottom:0; font-weight:900;cursor:default; user-select:none; ">
+      style="text-align:left; color:white; font-size:6em;margin-bottom:0; font-weight:900;cursor:default; user-select:none; ">
       Divra Client</h1>
 
-    <p style="color:white;font-weight:900;cursor:default; font-size:2em; text-align:center;margin-top:0;">
+    <p style="color:white;font-weight:900;cursor:default; font-size:2em; text-align:left;margin-top:0;">
       The ultimate bloxd.io modded client</p>
   </div>
   <br><br><br>
@@ -147,25 +161,19 @@
 
   </div>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5742184340089702"
-     crossorigin="anonymous"></script>
-<!-- Adbreak -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5742184340089702"
-     data-ad-slot="3136891424"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<div class="w3-row" style="color:white;">
-  <h2>Switching from Swift Client</h2>
-</div>
+    crossorigin="anonymous"></script>
+  <!-- Adbreak -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5742184340089702" data-ad-slot="3136891424"
+    data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
   <br>
-  <footer style="background-color:rgb(41, 39, 39);">
+  <footer class="w3-row" style="background-color:rgb(41, 39, 39);">
     <p>Made by Blxm</p>
     <a href="https://discord.gg/A4Cqcj7ACw" target="_blank">
-     
+
       <img src="Images/discord.png"
         style="user-select:none;-webkit-user-select:none; cursor:pointer;width:25px; margin-bottom:5px;">
     </a>
