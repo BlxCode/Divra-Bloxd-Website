@@ -9,3 +9,6 @@ background-color:rgb(173, 192, 155);
 .mrow{
     font-size:2.65em;
 }
+.mselected{
+    color:lightseagreen;
+}
