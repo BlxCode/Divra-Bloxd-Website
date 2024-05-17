@@ -13,7 +13,9 @@ background-color:rgb(173, 192, 155);
     color:lightseagreen;
 }
 .mNavbar{
-
+border-left-color:grey;
+border-left-style:ridge;
+border-width: 1px;
     margin-bottom:none;
     text-decoration:none;
 }
