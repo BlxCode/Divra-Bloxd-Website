@@ -43,5 +43,6 @@ function forever() {
 }
 forever();
 setInterval(forever, 100);
+console.log(screen.width);
 
 
