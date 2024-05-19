@@ -48,7 +48,7 @@ console.log(screen.availWidth);
 if(screen.availWidth<540){
   document.getElementById("MobileNavBar").hidden=false;
   document.getElementById("TOP").hidden=true;
-}else{
+}else if(screen.availWidth>540){
   document.getElementById("MobileNavBar").hidden=true;
   document.getElementById("TOP").hidden=false;
 }
