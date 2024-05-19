@@ -49,7 +49,7 @@ if(screen.availWidth<540){
   document.getElementById("MobileNavBar").hidden=false;
   document.getElementById("TOP").hidden=true;
 }else if(screen.availWidth>539){
-  document.getElementById("MobileNavBar").hidden=true;
+  document.getElementById("MobileNavBar").remove();
   document.getElementById("TOP").hidden=false;
 }
 
