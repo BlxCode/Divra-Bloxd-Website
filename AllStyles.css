@@ -10,6 +10,9 @@ button{
     border-radius:50px;
     font-size:1.5em;
 }
+button:hover{
+    transform:scale(1.1);
+}
 .mrow{
     font-size:2.65em;
 }
