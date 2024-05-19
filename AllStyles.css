@@ -6,6 +6,9 @@ background-color:rgb(173, 192, 155);
     background-color:greenyellow;
     color:black;
 }
+button{
+    border-radius:10px;
+}
 .mrow{
     font-size:2.65em;
 }
