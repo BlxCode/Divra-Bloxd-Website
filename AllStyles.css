@@ -20,6 +20,7 @@ padding-left:10px;
 padding-right:10px;
     margin-bottom:none;
     text-decoration:none;
+    margin-bottom:10px;
 }
 a{text-decoration-line:none; text-decoration:none; }
 h1,h2,h3,h4,h5,h6,p,label{
@@ -27,4 +28,7 @@ h1,h2,h3,h4,h5,h6,p,label{
 }
 #TOP{
     position:fixed;
+}
+h1{
+    margin-top:60px;
 }
