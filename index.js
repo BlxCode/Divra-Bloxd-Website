@@ -44,7 +44,7 @@ function forever() {
 forever();
 setInterval(forever, 100);
 console.log(screen.width);
-if(screen.width<540){
+if(screen.innerWidth<540){
   document.getElementById("MobileNavBar").hidden=false;
   document.getElementById("TOP").hidden=true;
 }else{
