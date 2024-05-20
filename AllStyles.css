@@ -9,6 +9,8 @@ background-color:rgb(173, 192, 155);
 button{
     border-radius:50px;
     font-size:1.5em;
+    cursor:pointer;
+    background-color:rgb(185, 236, 219);
 }
 button:hover{
     transform:scale(1.1);
