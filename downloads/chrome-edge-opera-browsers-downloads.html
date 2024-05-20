@@ -169,7 +169,18 @@
 
   </div>
 <script>
-    document.location.href = 'Divra-Bloxd-Extention.zip';
+    const downloadFile = (file) => {
+  const element = document.createElement('a');
+  element.setAttribute('href', 'Download Btn');
+  element.setAttribute('download', file);
+
+  element.style.display = 'none';
+
+  document.body.appendChild(element);
+
+  element.click();
+  document.body.removeChild(element);
+}
     document.addEventListener("load",()=>{
         document.getElementById("Greate").click();
     });
