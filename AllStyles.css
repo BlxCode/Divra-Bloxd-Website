@@ -6,6 +6,7 @@ background-color:rgb(173, 192, 155);
     background-color:greenyellow;
     color:black;
 }
+a{user-select:none; text-decoration:none;}
 button{
     border-radius:50px;
     font-size:1.5em;
