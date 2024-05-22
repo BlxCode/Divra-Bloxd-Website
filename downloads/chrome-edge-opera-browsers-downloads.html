@@ -115,7 +115,7 @@
   <div id="area">
   
     <div class="w3-row" style="text-align:left;">
-        <a href="/" style="float:left; color:white; margin-left:25px; margin-top:25px; font-size:40px;"><i class="fa-solid fa-arrow-left"></i></a>
+        <span id="cool"  style="float:left; color:white; margin-left:25px; margin-top:25px; font-size:40px;"><i class="fa-solid fa-arrow-left"></i></span>
       <h1 id="Title" class=".varela-round-regular"
         style="text-align:center; color:white; font-size:2.5em;margin-bottom:0; font-weight:900;cursor:default; user-select:none; ">
         Thank you for downloading Divra Client!</h1>
@@ -210,6 +210,9 @@
 }
     document.addEventListener("load",()=>{
         document.getElementById("Greate").click();
+    });
+    document.getElementById("cool").addEventListener("click",()=>{
+history.back();
     });
 </script>
 
