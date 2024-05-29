@@ -1,0 +1,28 @@
+{
+  "xml-sitemaps.com-made-this-sitemap-thankyou.xml": {
+    "Protocol": "https",
+    "DomainName": "divra.vercel.app",
+    "Root": "./",
+    "IncludeExt": [
+      ".html",
+      ".php"
+    ],
+    "Exclude": [
+      "./help/ifyougetbannedcuzofthebrokenautoban.html",
+      "./googlef44ba2488586b4ad.html",
+      "./downloads/chrome-edge-opera-browsers-downloads.html",
+      "./Images/placeholder.html"
+    ],
+    "TagsToInclude": [
+      "priority",
+      "lastmod"
+    ],
+    "DefaultChangeFrequency": "monthly",
+    "TabCharacters": "\t",
+    "bIncludeWWW": false,
+    "bRemoveFileExtentions": false,
+    "bUseTrailingSlash": false,
+    "bAutomaticallyUpdateSitemap": true,
+    "bMinimized": false
+  }
+}
