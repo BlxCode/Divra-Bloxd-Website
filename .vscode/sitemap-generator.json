@@ -8,10 +8,10 @@
       ".php"
     ],
     "Exclude": [
-      "./help/ifyougetbannedcuzofthebrokenautoban.html",
-      "./googlef44ba2488586b4ad.html",
-      "./downloads/chrome-edge-opera-browsers-downloads.html",
-      "./Images/placeholder.html"
+      "help/ifyougetbannedcuzofthebrokenautoban.html",
+      "googlef44ba2488586b4ad.html",
+      "downloads/chrome-edge-opera-browsers-downloads.html",
+      "Images/placeholder.html"
     ],
     "TagsToInclude": [
       "priority",
