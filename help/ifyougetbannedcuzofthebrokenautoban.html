@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color:white;
+            }
+        </style>
+        <title>Divra Appeal Code</title>
+    </head>
+    <body>
+        <h1>Divra Appeal Code</h1>
+        <p>Copy and paste this: <mark><i><span id="code"></span></i></mark></p>
+        <script>
+        var date = new Date;
+        let hour = date.getUTCHours()+1;
+        let hournow = date.getHours();
+        var code = document.getElementById("code");
+        var dayutc = String(date.getUTCDay());
+        var dayctime = String(date.getDay());
+        var utcmoth = String(date.getUTCMonth());
+        var ran = Math.floor(Math.random()*142);
+        var dc = ran*434;
+        var vdc = (utcmoth+ran)+dc;
+        code.innerHTML= hour+hournow+dayutc+dayctime+"dvc"+utcmoth+String(ran)+(ran*434)+String(vdc)+"applCde"+";43'sx?a🎮";
+    </script>
+    </body>
+
+</html>
