@@ -17,7 +17,7 @@
       "priority",
       "lastmod"
     ],
-    "DefaultChangeFrequency": "monthly",
+    "DefaultChangeFrequency": "daily",
     "TabCharacters": "\t",
     "bIncludeWWW": false,
     "bRemoveFileExtentions": false,
