@@ -243,6 +243,15 @@ af.preventDefault();
 </script>
   <script src="../index.js">
   </script>
+  <script>
+    if(screen.availWidth<540){
+      if (confirm("Your device is not avaliable for this download. Do you still want to continue?") == true) {
+  
+  } else {
+   history.back();
+  }
+}
+  </script>
 </body>
 
 </html>
