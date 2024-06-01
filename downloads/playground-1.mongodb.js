@@ -11,10 +11,10 @@
 
 // Select the database to use.
 use('Divra-stuff');
-
+var password 
 // Insert a few documents into the sales collection.
 db.getCollection('Logins etc').insertMany([
-  { 'Username': "username", 'Password': 10}
+  { 'Username': "username", 'Password':password}
   ]);
 
 // Run a find command to view items sold on April 4th, 2014.
@@ -23,7 +23,7 @@ const salesOnApril4th = db.getCollection('Logins etc').find({
 }).count();
 
 // Print a message to the output window.
-console.log(`${salesOnApril4th} sales occurred in 2014.`);
+
 
 // Here we run an aggregation and open a cursor to the results.
 // Use '.toArray()' to exhaust the cursor to return the whole result set.
