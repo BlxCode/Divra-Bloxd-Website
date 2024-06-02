@@ -255,13 +255,35 @@ af.preventDefault();
   </script>
   <script>
 var questionhold = document.getElementById("questi");
-function dropdown (wrapper, texet, t){
+function dropdown (wrapper, texet, t,wrapt){
 texet.textContent=t;
+console.log(texet);
+wrapper.appendChild(texet);
+questionhold.appendChild(wrapper);
+wrapper.textContent=wrapt+" ⯆";
+texet.hidden=true;
+texet.style.color="white";
+wrapper.style.cursor="pointer";
+wrapper.style.padding="10px";
+wrapper.style.backgroundColor="rgba(0,190,255,0.9)";
+wrapper.style.fontWeight="900";
+wrapper.style.borderRadius="10px";
+wrapper.style.margin="25px";
+wrapper.style.width="255px"
+wrapper.style.webkitTextStroke="0.75px black";
+wrapper.style.mozTextStroke="0.75px black";
+wrapper.addEventListener("click",(g)=>{
+texet.hidden=false;
+console.log(texet.hidden);
+console.log(texet);
+console.log(g);
+});
 }
 // Create the wrapper for dropdown
-var drw1 = document.createElement("span");
+var drw1 = document.createElement("div");
 // Create the text in dropdown
-var drt1 = document.createElement("span");
+var drt1 = document.createElement("p");
+dropdown(drw1,drt1,"This bug usually happens because of a undefined / nulled number in the cookies containing the crosshair width, so your crosshair isn't gone, but very small. To fix this, press f12, or control + shift + j and click 'console', and paste in localStorage.setItem("crosswidth') ","My crosshair is gone");
   </script>
 </body>
 
