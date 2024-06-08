@@ -3,15 +3,10 @@
 	<url>
 		<loc>https://divra.vercel.app</loc>
 		<priority>1.00</priority>
-		<lastmod>2024-05-26</lastmod>
+		<lastmod>2024-05-25</lastmod>
 	</url>
 	<url>
-		<loc>https://divra.vercel.app/about-us</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-05-22</lastmod>
-	</url>
-	<url>
-		<loc>https://divra.vercel.app/bloxdrecords</loc>
+		<loc>https://divra.vercel.app/help</loc>
 		<priority>0.50</priority>
 		<lastmod>2024-05-23</lastmod>
 	</url>
@@ -21,8 +16,13 @@
 		<lastmod>2024-06-07</lastmod>
 	</url>
 	<url>
-		<loc>https://divra.vercel.app/help</loc>
+		<loc>https://divra.vercel.app/bloxdrecords</loc>
 		<priority>0.50</priority>
-		<lastmod>2024-05-24</lastmod>
+		<lastmod>2024-05-22</lastmod>
+	</url>
+	<url>
+		<loc>https://divra.vercel.app/about-us</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-05-21</lastmod>
 	</url>
 </urlset>
