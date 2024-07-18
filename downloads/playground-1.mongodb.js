@@ -11,7 +11,7 @@
 
 // Select the database to use.
 use('Divra-stuff');
-var password 
+var password ="test";
 // Insert a few documents into the sales collection.
 db.getCollection('Logins etc').insertMany([
   { 'Username': "username", 'Password':password}
