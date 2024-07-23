@@ -12,6 +12,9 @@
 
   gtag('config', 'G-WKGS6CJ7V8');
 </script>
+
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
     <script src="https://kit.fontawesome.com/d2a23fcf0d.js"
       crossorigin="anonymous"></script>
     <meta name="google-adsense-account" content="ca-pub-5742184340089702">
@@ -155,10 +158,17 @@
       </div>
     </div>
     <script
-      src="https://cdn.jsdelivr.net/npm/pouchdb@9.0.0/dist/pouchdb.min.js"></script>
-    <script>
-     const db = new PouchDB('http://localhost:5984/divra');
-     var signupUsername = document.getElementById("uname");
+  async
+  crossorigin="anonymous"
+  data-clerk-publishable-key="pk_test_aW1tb3J0YWwtc3RhZy02Ny5jbGVyay5hY2NvdW50cy5kZXYk"
+  src="https://immortal-stag-67.clerk.accounts.dev/npm/@clerk/clerk-js@4/dist/clerk.browser.js"
+  type="text/javascript">
+</script>
+      <script>
+ 
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+   var signupUsername = document.getElementById("uname");
      var pass = document.getElementById("pass");
      var repass = document.getElementById("rpass");
      var signupSubmit = document.getElementById("sUPubmit");
@@ -174,39 +184,7 @@ error.innerHTML="Password too Short"
     error.textContent="No Username specified";
   }else{
     error.textContent="";
-    var doc = {
-  "_id": String(signupUsername.value),
-  "username": String(signupUsername.value),
-  "password": String(pass.value),
-  "discord":String(discord.value)
-  
-};
-  }
-  db.put(doc);
-  const sync = PouchDB.sync('divra', 'http://localhost:5984/divra', {
-  live: true,
-  retry: true
-}).on('change', function (info) {
-  // handle change
-  console.log(change+info);
-}).on('paused', function (err) {
-  console.error("Signup Sync Paused: "+err);
-  // replication paused (e.g. replication up to date, user went offline)
-}).on('active', function () {
-console.log("Signup Sync Active");
-  // replicate resumed (e.g. new changes replicating, user went back online)
-}).on('denied', function (err) {
-  // a document failed to replicate (e.g. due to permissions)
-}).on('complete', function (info) {
-console.log("Signup Sync Complete: "+info);
-}).on('error', function (err) {
-  // handle error
-  console.error("Signup Sync Errored: "+err);
-});
-  // Signup Complete once synked to database
-  db.get('divra').then(function (adoc) {
-  alert(adoc);
-});
+ 
 });
 
 
