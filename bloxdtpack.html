@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="https://kit.fontawesome.com/d2a23fcf0d.js" crossorigin="anonymous"></script>
         <title>Bloxd Texture Pack</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div id=top style="position:fixed; top:0px; left:0px; background-color:rgb(249, 249, 157);text-align:center; width:100%; font-size:40px; color:rgb(116, 7, 7); padding:10px;">Update: You can now change  <i id="x"style="vertical-align:middle; margin-right:10px; text-align:right; float:right;cursor:pointer; " class="fa-solid fa-circle-xmark"></i></div>
         <h1>Bloxd Texture Pack Steps</h1>
         <h2>Step 1</h2>
         <img src="Images/Screenshot 2024-07-22 10.02.15 PM.png" width="500" alt="s1">
@@ -16,6 +18,12 @@
         <label for="t">Bloxd Texture Pack JSON editor</label><br>
 
         <textarea id="t" style="resize:none;"cols="80" rows="55">{
+            "metaData": {
+                "id": "texture pack id",
+                "name": "name of texture pack",
+                "previewImage": "image url",
+                "author": "creator"
+            },
             "blockAtlas": "Put Bloxd Block Texture Pack Url Here",
             "skyBoxes": {
                 "default": {
@@ -73,7 +81,92 @@
             }
         }
         </textarea>
+        <h3>Skyboxes</h3>
+        <p>
+            A skybox can be either Earth, or Custom<br>
+            Earth example
+            "type": "earth"<br>
+            "inclination": "number" <br>
+            "turbidity": "number"<br>
+            "infiniteDistance": "number"<br>
+            "luminance": "number"<br>
+            "yCameraOffset": "number"<br>
+            "azimuth": <br>
+                <br>
+                Custom Example:
+                "type": "custom", <br>
+                "nx": ""url"", <br>
+                "ny": "url", <br>
+                "nz": "url", <br>
+                "px": "url", <br>
+                "py": "url", <br>
+                "pz": "url", <br>
+        </p>
+        <br>
+        <h2>Texture Pack Example</h2>
+        <code>
+            {
+                "metaData": {
+                "id": "blxmtpack",
+                "name": "Skies and 4s",
+                "previewImage": "https://i.imgur.com/MkwdVAU.png",
+                "author": "Blxm"
+            },
+                "blockAtlas": "https://i.imgur.com/PdbRBDw.png",
+                "skyBoxes": {
+                    "default": {
+                        "type": "custom",
+                        "nx": "https://i.ibb.co/1q8XnL3/nx.jpg",
+                        "ny": "https://i.ibb.co/Zz3jr4W/ny.jpg",
+                        "nz": "https://i.ibb.co/tLvv2L9/nz.jpg",
+                        "px": "https://i.ibb.co/RCZ3ph8/px.jpg",
+                        "py": "https://i.ibb.co/Y3dyHFy/py.jpg",
+                        "pz": "https://i.ibb.co/SdCDvMW/pz.jpg"
+                    },
+                    "interstellar": {
+                        "type": "custom",
+                        "nx": "https://i.ibb.co/1q8XnL3/nx.jpg",
+                        "ny": "https://i.ibb.co/Zz3jr4W/ny.jpg",
+                        "nz": "https://i.ibb.co/tLvv2L9/nz.jpg",
+                        "px": "https://i.ibb.co/RCZ3ph8/px.jpg",
+                        "py": "https://i.ibb.co/Y3dyHFy/py.jpg",
+                        "pz": "https://i.ibb.co/SdCDvMW/pz.jpg"
+                    },
+                    "space_blue": {
+                        "type": "custom",
+                        "nx": "https://i.ibb.co/1q8XnL3/nx.jpg",
+                        "ny": "https://i.ibb.co/Zz3jr4W/ny.jpg",
+                        "nz": "https://i.ibb.co/tLvv2L9/nz.jpg",
+                        "px": "https://i.ibb.co/RCZ3ph8/px.jpg",
+                        "py": "https://i.ibb.co/Y3dyHFy/py.jpg",
+                        "pz": "https://i.ibb.co/SdCDvMW/pz.jpg"
+                    },
+                    "space_lightblue": {
+                        "type": "custom",
+                        "nx": "https://i.ibb.co/1q8XnL3/nx.jpg",
+                        "ny": "https://i.ibb.co/Zz3jr4W/ny.jpg",
+                        "nz": "https://i.ibb.co/tLvv2L9/nz.jpg",
+                        "px": "https://i.ibb.co/RCZ3ph8/px.jpg",
+                        "py": "https://i.ibb.co/Y3dyHFy/py.jpg",
+                        "pz": "https://i.ibb.co/SdCDvMW/pz.jpg"
+                    },
+                    "space_red": {
+                        "type": "custom",
+                        "nx": "https://i.ibb.co/1q8XnL3/nx.jpg",
+                        "ny": "https://i.ibb.co/Zz3jr4W/ny.jpg",
+                        "nz": "https://i.ibb.co/tLvv2L9/nz.jpg",
+                        "px": "https://i.ibb.co/RCZ3ph8/px.jpg",
+                        "py": "https://i.ibb.co/Y3dyHFy/py.jpg",
+                        "pz": "https://i.ibb.co/SdCDvMW/pz.jpg"
+                    }
+                }
+            }
+        </code>
         <script>
+            var x = document.getElementById("x");
+            x.addEventListener("click",()=>{
+                document.getElementById("top").hidden=true;
+            })
             var t = document.getElementById("t");
             if(localStorage.getItem("t")==null||localStorage.getItem("t")==undefined){
 localStorage.setItem("t",t.value);
@@ -85,6 +178,6 @@ localStorage.setItem("t",t.value);
             });
         </script>
         <h2>Step 3</h2>
-        <p>Copy all of the JSON code in step 2 and paste it in Custom > Apply</p>
+        <p>Copy all of the JSON code you wrote in step 2 and paste it in Custom > Apply</p>
     </body>
 </html>
