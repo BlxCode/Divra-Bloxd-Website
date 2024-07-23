@@ -73,6 +73,17 @@
             }
         }
         </textarea>
+        <script>
+            var t = document.getElementById(t);
+            if(localStorage.getItem("t")==null||localStorage.getItem("t")==undefined){
+localStorage.setItem("t",t.value);
+            }else{
+                t.value=localStorage.getItem("t");
+            }
+            t.addEventListener("keyup",()=>{
+localStorage.setItem("t",t.value);
+            });
+        </script>
         <h2>Step 3</h2>
         <p>Copy all of the JSON code in step 2 and paste it in Custom > Apply</p>
     </body>
