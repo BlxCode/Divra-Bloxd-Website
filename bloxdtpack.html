@@ -10,7 +10,7 @@
         <img src="Images/Screenshot 2024-07-22 10.02.15 PM.png" width="500" alt="s1">
         <p>Go to Settings > Texture Pack > Custom</p>
         <h2>Step 2</h2>
-        <br>
+    
         <h3>Image Uploader</h3>
         <a href="https://imgur.com/upload">https://imgur.com/upload</a>
         <label for="t">Bloxd Texture Pack JSON editor</label><br>
@@ -74,7 +74,7 @@
         }
         </textarea>
         <script>
-            var t = document.getElementById(t);
+            var t = document.getElementById("t");
             if(localStorage.getItem("t")==null||localStorage.getItem("t")==undefined){
 localStorage.setItem("t",t.value);
             }else{
