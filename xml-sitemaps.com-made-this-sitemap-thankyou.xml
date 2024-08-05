@@ -3,41 +3,41 @@
 	<url>
 		<loc>https://divra.vercel.app</loc>
 		<priority>1.00</priority>
-		<lastmod>2023-04-04</lastmod>
-	</url>
-	<url>
-		<loc>https://divra.vercel.app/divradashbord.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-15</lastmod>
-	</url>
-	<url>
-		<loc>https://divra.vercel.app/help</loc>
-		<priority>0.50</priority>
-		<lastmod>2023-02-12</lastmod>
-	</url>
-	<url>
-		<loc>https://divra.vercel.app/downloads</loc>
-		<priority>0.50</priority>
-		<lastmod>2023-02-06</lastmod>
-	</url>
-	<url>
-		<loc>https://divra.vercel.app/bloxdrecords</loc>
-		<priority>0.50</priority>
-		<lastmod>2023-01-04</lastmod>
-	</url>
-	<url>
-		<loc>https://divra.vercel.app/betaTos.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2023-01-27</lastmod>
-	</url>
-	<url>
-		<loc>https://divra.vercel.app/about-us</loc>
-		<priority>0.50</priority>
-		<lastmod>2023-02-10</lastmod>
+		<lastmod>2023-03-30</lastmod>
 	</url>
 	<url>
 		<loc>https://divra.vercel.app/store</loc>
 		<priority>0.50</priority>
-		<lastmod>2024-07-24</lastmod>
+		<lastmod>2024-07-19</lastmod>
+	</url>
+	<url>
+		<loc>https://divra.vercel.app/about-us</loc>
+		<priority>0.50</priority>
+		<lastmod>2023-02-05</lastmod>
+	</url>
+	<url>
+		<loc>https://divra.vercel.app/betaTos.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2023-01-22</lastmod>
+	</url>
+	<url>
+		<loc>https://divra.vercel.app/bloxdrecords</loc>
+		<priority>0.50</priority>
+		<lastmod>2022-12-30</lastmod>
+	</url>
+	<url>
+		<loc>https://divra.vercel.app/downloads</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-08-04</lastmod>
+	</url>
+	<url>
+		<loc>https://divra.vercel.app/help</loc>
+		<priority>0.50</priority>
+		<lastmod>2023-02-07</lastmod>
+	</url>
+	<url>
+		<loc>https://divra.vercel.app/divradashbord.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-10</lastmod>
 	</url>
 </urlset>
